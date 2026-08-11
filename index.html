@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/app/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>AlaWin × GOLDENBOY — 300% + 300 DS + Bonus Crab</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="stage-bg" aria-hidden="true">
+        <div class="stage-haze"></div>
+        <div class="stage-pattern"></div>
+        <div class="stage-dunes"></div>
+        <div class="stage-palace"></div>
+        <div class="stage-wave wave-a"></div>
+        <div class="stage-wave wave-b"></div>
+        <div class="stage-ring ring-a"></div>
+        <div class="stage-ring ring-b"></div>
+        <div class="stage-ribbon ribbon-1"></div>
+        <div class="stage-ribbon ribbon-2"></div>
+        <div class="stage-ribbon ribbon-3"></div>
+        <div class="magic-smoke smoke-1"></div>
+        <div class="magic-smoke smoke-2"></div>
+        <div class="magic-smoke smoke-3"></div>
+        <div class="dust d1"></div>
+        <div class="dust d2"></div>
+        <div class="dust d3"></div>
+        <div class="dust d4"></div>
+        <div class="dust d5"></div>
+        <div class="dust d6"></div>
+        <div class="dust d7"></div>
+        <div class="dust d8"></div>
+
+        <!-- Aladdin-style floating motifs -->
+        <div class="motif motif-carpet">
+          <svg viewBox="0 0 96 48" fill="none" aria-hidden="true">
+            <path d="M8 28c10-10 24-14 40-10 12 3 22 2 32-4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="M10 32c12-8 26-12 42-8 11 3 20 2 30-3" stroke="currentColor" stroke-width="2" opacity="0.55" stroke-linecap="round"/>
+            <path d="M14 24l-4 10M28 18l-2 12M48 16l1 13M68 18l3 11M86 22l4 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+            <circle cx="10" cy="34" r="2.2" fill="currentColor"/>
+            <circle cx="90" cy="30" r="2.2" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="motif motif-lamp">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M18 36c0-8 6-14 14-14h4c6 0 10 3 12 8 5 1 8 5 8 10 0 6-5 10-12 10H28c-6 0-10-4-10-8z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M22 30c-4-1-7-4-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M30 22v-5c0-2 2-4 4-4h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M46 28c4-6 8-8 12-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+            <path d="M48 34c5-3 9-3 12 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="motif motif-moon">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M36 12a20 20 0 1016 32 16 16 0 11-16-32z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            <circle cx="42" cy="22" r="1.6" fill="currentColor"/>
+            <circle cx="48" cy="30" r="1.2" fill="currentColor" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="motif motif-star motif-star-a">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M32 8l4.5 14H52l-12 9 4.5 14L32 36l-12.5 9 4.5-14-12-9h15.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="motif motif-star motif-star-b">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M32 10v44M10 32h44M18 18l28 28M46 18L18 46" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="motif motif-genie">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M32 10c6 0 10 4 10 10 0 8-6 12-10 18-4-6-10-10-10-18 0-6 4-10 10-10z" stroke="currentColor" stroke-width="2.1"/>
+            <path d="M22 40c4 4 8 6 10 12 2-6 6-8 10-12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M24 52h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="28" cy="20" r="1.5" fill="currentColor"/>
+            <circle cx="36" cy="20" r="1.5" fill="currentColor"/>
+            <path d="M28 26h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="motif motif-coin">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <circle cx="32" cy="32" r="18" stroke="currentColor" stroke-width="2.2"/>
+            <circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="1.5" opacity="0.65"/>
+            <path d="M32 20v24M24 26h16M24 38h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-inner">
+          <a href="#" class="nav-brand" aria-label="GOLDENBOY × AlaWin">
+            <img src="assets/avatar.webp" alt="" class="nav-avatar" />
+            <span class="nav-creator-text">
+              <span class="nav-creator-name">GOLDENBOY</span>
+              <span class="nav-creator-x">×</span>
+              <img src="assets/logo.webp" alt="AlaWin" class="nav-partner-logo" />
+            </span>
+          </a>
+          <div class="nav-links">
+            <a href="#promo" data-i18n="navPromo">Promocja</a>
+            <a href="#package" data-i18n="navPackage">Pakiet</a>
+            <a href="#steps" data-i18n="navSteps">Jak zacząć</a>
+          </div>
+          <div class="nav-actions">
+            <div class="lang-toggle">
+              <button type="button" data-lang="pl" class="active">PL</button>
+              <button type="button" data-lang="en">EN</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <header class="hero" id="promo">
+        <div class="hero-banner" aria-hidden="true">
+          <img src="assets/banner.png" alt="" class="hero-banner-img" />
+          <div class="hero-banner-veil"></div>
+          <div class="hero-banner-fade"></div>
+        </div>
+
+        <div class="hero-plane" aria-hidden="true">
+          <div class="hero-glow"></div>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-brand reveal-stagger">
+            <img
+              src="assets/rekomendacja.png"
+              alt="GOLDENBOY rekomenduje"
+              class="hero-reco"
+            />
+          </div>
+          <div class="hero-ornament" aria-hidden="true">
+            <span></span>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 4c2 3 4 5 8 6-4 1-6 3-8 6-2-3-4-5-8-6 4-1 6-3 8-6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+            <span></span>
+          </div>
+
+          <p class="hero-eyebrow reveal-stagger">
+            <span class="hero-lamp-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 14c0-3 2.5-5.5 5.5-5.5H12c2.4 0 4 1.2 4.8 3.2 1.8.3 3.2 1.8 3.2 3.6 0 2.1-1.8 3.7-4.4 3.7H8.6C6.4 19 5 17.4 5 15.5z" stroke="currentColor" stroke-width="1.7"/>
+                <path d="M7.5 11.5C6 11 4.8 9.8 4.2 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span data-i18n="heroEyebrow">Kod promocyjny GOLDENBOY</span>
+          </p>
+
+          <h1 class="hero-title reveal-stagger" data-i18n="heroTitle">
+            Pakiet 3 bonusów na start
+          </h1>
+
+          <p class="hero-desc reveal-stagger" data-i18n="heroDesc">
+            300% do 9 000 zł + 300 DS + 1 Bonus Crab
+          </p>
+
+          <div class="hero-cta reveal-stagger">
+            <a
+              href="https://api.streamaf.net/api/v1/postbacks/r/81d275a79672548de431c3c2a75c8bf188522cc3399ed47d"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-gold btn-lg"
+              data-i18n="heroCta"
+            >ZAREJESTRUJ I ODBIERZ</a>
+            <a href="#package" class="btn btn-ghost btn-lg" data-i18n="heroMore">Zobacz pakiet</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="main" id="main-content">
+        <section class="code-section reveal">
+          <div class="code-bar">
+            <div class="code-info">
+              <span class="code-label" data-i18n="codeLabel">Kod promocyjny</span>
+              <span class="code-hint" data-i18n="codeHint">Wpisz podczas rejestracji</span>
+            </div>
+            <div class="code-actions">
+              <button type="button" class="code-value" id="promoCodeDisplay" title="GOLDENBOY">
+                GOLDENBOY
+              </button>
+              <button type="button" class="btn btn-gold btn-sm" id="copyPromoBtn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" />
+                  <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+                </svg>
+                <span id="copyBtnText" data-i18n="codeCopy">Kopiuj</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="package">
+          <div class="section-split">
+            <div class="section-header section-header-left reveal-stagger">
+              <span class="section-tag" data-i18n="packTag">Pakiet powitalny</span>
+              <h2 class="section-title">
+                <span data-i18n="packTitle1">Trzy bonusy.</span>
+                <span class="highlight" data-i18n="packTitle2">Jeden start.</span>
+              </h2>
+              <p class="section-desc" data-i18n="packDesc">
+                Wpisz kod GOLDENBOY przy rejestracji i aktywuj cały pakiet.
+              </p>
+            </div>
+
+            <div class="pack-track">
+              <article class="pack-item reveal-stagger">
+                <span class="pack-index">01</span>
+                <div class="pack-body">
+                  <span class="pack-label" data-i18n="pack1Label">Bonus depozytowy</span>
+                  <span class="pack-meta" data-i18n="pack1Meta">do 9 000 zł</span>
+                </div>
+                <strong class="pack-value" data-i18n="pack1Value">300%</strong>
+              </article>
+              <article class="pack-item reveal-stagger">
+                <span class="pack-index">02</span>
+                <div class="pack-body">
+                  <span class="pack-label" data-i18n="pack2Label">Darmowe spiny</span>
+                  <span class="pack-meta" data-i18n="pack2Meta">DS na start</span>
+                </div>
+                <strong class="pack-value" data-i18n="pack2Value">300</strong>
+              </article>
+              <article class="pack-item reveal-stagger">
+                <span class="pack-index">03</span>
+                <div class="pack-body">
+                  <span class="pack-label" data-i18n="pack3Label">Bonus Crab</span>
+                  <span class="pack-meta" data-i18n="pack3Meta">ekstra nagroda</span>
+                </div>
+                <strong class="pack-value" data-i18n="pack3Value">1×</strong>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-alt reveal" id="steps">
+          <div class="section-split">
+            <div class="section-header section-header-left reveal-stagger">
+              <span class="section-tag" data-i18n="stepsTag">Jak zacząć</span>
+              <h2 class="section-title">
+                <span data-i18n="stepsTitle1">Trzy kroki do</span>
+                <span class="highlight" data-i18n="stepsTitle2">bonusu</span>
+              </h2>
+              <p class="section-desc" data-i18n="stepsDesc">
+                Rejestracja zajmuje chwilę — kod GOLDENBOY robi resztę.
+              </p>
+              <div class="steps-cta">
+                <a
+                  href="https://api.streamaf.net/api/v1/postbacks/r/81d275a79672548de431c3c2a75c8bf188522cc3399ed47d"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-gold btn-lg"
+                  data-i18n="stepsCta"
+                >ZAREJESTRUJ TERAZ</a>
+              </div>
+            </div>
+
+            <ol class="steps-list">
+              <li class="step reveal-stagger">
+                <span class="step-num">1</span>
+                <div>
+                  <h3 data-i18n="step1Title">Zarejestruj się</h3>
+                  <p data-i18n="step1Desc">Kliknij ZAREJESTRUJ i załóż konto AlaWin.</p>
+                </div>
+              </li>
+              <li class="step reveal-stagger">
+                <span class="step-num">2</span>
+                <div>
+                  <h3 data-i18n="step2Title">Wpisz GOLDENBOY</h3>
+                  <p data-i18n="step2Desc">Wklej kod promocyjny podczas rejestracji.</p>
+                </div>
+              </li>
+              <li class="step reveal-stagger">
+                <span class="step-num">3</span>
+                <div>
+                  <h3 data-i18n="step3Title">Odbierz pakiet</h3>
+                  <p data-i18n="step3Desc">300% + 300 DS + Bonus Crab czekają na start.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="section reveal" id="benefits">
+          <div class="section-header section-header-left reveal-stagger">
+            <span class="section-tag" data-i18n="benefitsTag">Dlaczego AlaWin</span>
+            <h2 class="section-title">
+              <span data-i18n="benefitsTitle1">Gra w</span>
+              <span class="highlight" data-i18n="benefitsTitle2">złotym stylu</span>
+            </h2>
+            <p class="section-desc" data-i18n="benefitsDesc">
+              Kasyno z szybkim startem, jasnymi zasadami i ekspresowymi wypłatami.
+            </p>
+          </div>
+
+          <div class="benefits-row">
+            <div class="benefit reveal-stagger">
+              <span class="benefit-mark" aria-hidden="true"></span>
+              <h3 data-i18n="benefit1Title">Błyskawiczne wypłaty</h3>
+              <p data-i18n="benefit1Desc">Środki trafiają na konto bez zbędnego czekania.</p>
+            </div>
+            <div class="benefit reveal-stagger">
+              <span class="benefit-mark" aria-hidden="true"></span>
+              <h3 data-i18n="benefit2Title">Bogaty katalog gier</h3>
+              <p data-i18n="benefit2Desc">Automaty, live i promocje dopasowane do codziennej gry.</p>
+            </div>
+            <div class="benefit reveal-stagger">
+              <span class="benefit-mark" aria-hidden="true"></span>
+              <h3 data-i18n="benefit3Title">Bezpieczna platforma</h3>
+              <p data-i18n="benefit3Desc">Szyfrowanie i licencjonowana oferta dla dorosłych graczy.</p>
+            </div>
+            <div class="benefit reveal-stagger">
+              <span class="benefit-mark" aria-hidden="true"></span>
+              <h3 data-i18n="benefit4Title">Mobilnie gotowe</h3>
+              <p data-i18n="benefit4Desc">Pełna funkcjonalność na telefonie i komputerze.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="assets/logo.webp" alt="AlaWin" class="footer-logo" />
+            <p data-i18n="footerTagline">Złoty start w kasynie</p>
+          </div>
+          <div class="footer-links">
+            <a href="privacy.html" data-i18n="footerPrivacy">Prywatność</a>
+            <a href="#" data-i18n="footerTerms">Regulamin</a>
+          </div>
+          <div class="footer-legal">
+            <p data-i18n="footerLegal1">18+ | Graj odpowiedzialnie | Oferta dla nowych graczy</p>
+            <p>© <span class="footer-year">2026</span> AlaWin × GOLDENBOY. <span data-i18n="footerLegal2">Wszelkie prawa zastrzeżone.</span></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/app/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Polityka prywatności — AlaWin × GOLDENBOY</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="stage-bg" aria-hidden="true">
+        <div class="stage-haze"></div>
+        <div class="stage-wave wave-a"></div>
+        <div class="stage-ring ring-a"></div>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-brand">
+            <img src="assets/logo.webp" alt="AlaWin" class="nav-logo" />
+          </a>
+          <div class="nav-actions">
+            <a href="index.html" class="btn btn-gold btn-sm">← Powrót</a>
+          </div>
+        </div>
+      </nav>
+
+      <main class="privacy-wrap">
+        <h1 style="font-size: clamp(2rem, 4vw, 2.6rem); font-weight: 800; text-align: center;">
+          Polityka prywatności
+        </h1>
+        <p style="text-align: center; color: var(--text-secondary); margin-top: 0.5rem;">
+          AlaWin × GOLDENBOY
+        </p>
+
+        <div class="privacy-panel">
+          <h2>1. Informacje ogólne</h2>
+          <p>
+            Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych
+            przekazanych przez Użytkowników w związku z korzystaniem z serwisu AlaWin × GOLDENBOY.
+          </p>
+
+          <h2>2. Administrator danych</h2>
+          <p>Administratorem danych osobowych jest operator landing page AlaWin × GOLDENBOY.</p>
+
+          <h2>3. Pliki cookies</h2>
+          <p>
+            Serwis wykorzystuje pliki cookies w celu zapewnienia prawidłowego funkcjonowania strony
+            oraz do celów analitycznych i reklamowych.
+          </p>
+
+          <h2>4. Dane zbierane automatycznie</h2>
+          <ul>
+            <li>Adres IP</li>
+            <li>Typ przeglądarki i wersja</li>
+            <li>System operacyjny</li>
+            <li>Data i godzina wizyty</li>
+          </ul>
+
+          <h2>5. Twoje prawa</h2>
+          <ul>
+            <li>Dostęp do swoich danych</li>
+            <li>Sprostowanie nieprawidłowych danych</li>
+            <li>Usunięcie danych</li>
+            <li>Ograniczenie przetwarzania</li>
+          </ul>
+
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 2rem;">
+            Ostatnia aktualizacja: <span id="privacy-date"></span>
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="index.html" class="btn btn-gold btn-lg">← Powrót do strony głównej</a>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      document.getElementById('privacy-date').textContent = new Date().toLocaleDateString('pl-PL');
+    </script>
+  </body>
+</html>

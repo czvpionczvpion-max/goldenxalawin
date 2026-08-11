@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/app/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>404 — AlaWin × GOLDENBOY</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="stage-bg" aria-hidden="true">
+        <div class="stage-haze"></div>
+        <div class="stage-wave wave-a"></div>
+        <div class="stage-ring ring-a"></div>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-brand">
+            <img src="assets/logo.webp" alt="AlaWin" class="nav-logo" />
+          </a>
+        </div>
+      </nav>
+
+      <div style="min-height: 70vh; display: flex; align-items: center; justify-content: center; padding: 0 1.25rem;">
+        <div style="text-align: center; max-width: 520px;">
+          <div style="font-size: 5rem; font-weight: 800; line-height: 1; color: var(--gold); font-family: var(--font-display);">404</div>
+          <h2 style="font-size: clamp(1.65rem, 3.2vw, 2.35rem); font-weight: 800; margin-top: 0.5rem;">
+            Strona nie została znaleziona
+          </h2>
+          <p style="margin: 0.75rem auto 1.5rem; color: var(--text-secondary);">
+            Przepraszamy, ale strona której szukasz nie istnieje.
+          </p>
+          <a href="index.html" class="btn btn-gold btn-lg">← Powrót do strony głównej</a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="assets/logo.webp" alt="AlaWin" class="footer-logo" />
+            <p>Złoty start w kasynie</p>
+          </div>
+          <div class="footer-legal">
+            <p>18+ | Graj odpowiedzialnie</p>
+            <p>© <span class="footer-year">2026</span> AlaWin × GOLDENBOY. Wszelkie prawa zastrzeżone.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.querySelectorAll('.footer-year').forEach((el) => {
+        el.textContent = String(new Date().getFullYear());
+      });
+    </script>
+  </body>
+</html>
